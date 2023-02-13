@@ -39,7 +39,7 @@ class PasswordApp(rumps.App):
     @rumps.clicked("Create Password")
     def password(self, _):
         generate_password(16)
-        rumps.notification("◈ | Passy", "Password Coppied to Clipboard", "", data=None)
+        rumps.notification("◈ | Passy", "Password Copied to Clipboard", "", data=None)
 
 if __name__ == "__main__":
     PasswordApp("Passy", "​", icon="icon.png").run()   
